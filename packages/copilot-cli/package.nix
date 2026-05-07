@@ -22,6 +22,9 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [ makeWrapper ] ++ lib.optionals stdenv.hostPlatform.isLinux [ wrapBuddy ];
 
+  # Bundled mxc-bin/{x64,arm64}/lxc-exec dlopen libgcc_s.so.1 at runtime.
+  runtimeDependencies = lib.optionals stdenv.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
+
   dontBuild = true;
 
   installPhase = ''
