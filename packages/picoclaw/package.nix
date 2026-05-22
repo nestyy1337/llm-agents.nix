@@ -11,16 +11,16 @@
 
 buildGoModule rec {
   pname = "picoclaw";
-  version = "0.2.8";
+  version = "0.2.9";
 
   src = fetchFromGitHub {
     owner = "sipeed";
     repo = "picoclaw";
     tag = "v${version}";
-    hash = "sha256-PCPqdxXoXgJZduw3o5p6+heQ8wHxidcqGQBxqD3IdjQ=";
+    hash = "sha256-oMees7EKANS5dkMHIqAHfGcumrNMtTEEA+dmpl8/dLE=";
   };
 
-  vendorHash = "sha256-k6bIfYfLf4aTP3BuFnacVRFmK+T32R+E9zKxw45sDdw=";
+  vendorHash = "sha256-SMBbOABlzK6XdrIqUibuuQ00AwXqfwZNogx2xeiOtyU=";
 
   nativeBuildInputs = [ unpinGoModVersionHook ];
 
