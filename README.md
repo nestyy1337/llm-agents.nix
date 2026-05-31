@@ -863,6 +863,16 @@ Nix packages for AI coding agents and development tools. Automatically updated d
 
 </details>
 <details>
+<summary><strong>codegraph</strong> - Semantic code intelligence for AI coding agents</summary>
+
+- **Source**: source
+- **License**: MIT
+- **Homepage**: https://github.com/colbymchenry/codegraph
+- **Usage**: `nix run github:numtide/llm-agents.nix#codegraph -- --help`
+- **Nix**: [packages/codegraph/package.nix](packages/codegraph/package.nix)
+
+</details>
+<details>
 <summary><strong>codex-auth</strong> - CLI tool for switching Codex accounts</summary>
 
 - **Source**: source
