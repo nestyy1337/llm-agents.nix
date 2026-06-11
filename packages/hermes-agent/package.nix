@@ -220,11 +220,12 @@ let
       # [web]
       fastapi
       uvicorn
+      # [markdown] — used by matrix and other formatters
+      markdown
     ]
     ++ lib.optionals stdenv.hostPlatform.isLinux [
       # [matrix] — python-olm broken on macOS upstream.
       mautrix
-      markdown
       aiosqlite
       asyncpg
     ];
